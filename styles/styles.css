@@ -1,0 +1,134 @@
+/* Fuente de pixeles */
+@font-face {
+  font-family: "pixel";
+  src: url("../fonts/pixel.ttf");
+}
+
+/* Quito los espacios blancos */
+* {
+  margin:0;
+  padding:0;
+  /*box-sizing: content-box !important; Quita los bordes negros del canvas  */
+}
+/* Tamaño total */
+html, body {
+  height: 100%;
+  background-color: black;
+  position: relative;
+}
+/* Todos los parrafos en Arial */
+p {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+/* Barra de navegacion */
+.navbar{
+  background-color:none  !important;
+  min-height: 10% !important;
+  max-height: 10% !important;
+  min-width: 100% !important;
+  background-color: rgba(144, 244, 244) !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.BotonesNavegacion{
+  margin: auto;
+}
+
+#music {
+  float: right;
+  margin-right: 20px;
+}
+
+#music img{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/* Capa del juego */
+.divGame{
+  max-height: 82% !important;
+  min-height: 80% !important;
+  position: absolute;
+  overflow: hidden;
+}
+
+canvas {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 80% !important;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Footer */
+.footer {
+    min-height: 10% !important;
+    max-height: 10% !important;
+    min-width: 100% !important;
+    position: absolute;
+    bottom: 0px;
+    background-image: url("../images/footerbg.png");
+
+}
+
+#dev{
+  font-family: "pixel" !important;
+  font-size: 13px;
+  margin-top: 20px !important;
+  float:left;
+}
+
+#social img{
+  margin-left: 10px;
+  margin-top: 20px;
+  float:right;
+  max-width: 30px !important;
+  max-height: 30px !important;
+}
+
+/* Modals */
+.titles{
+  font-style: 'bold';
+}
+
+.empresas{
+  color: red;
+}
+
+.list-group ul{
+  padding-left: 5% !important;
+}
+
+
+#textModalAbout{
+  float:left;
+  width: 50%;
+}
+
+
+#modalAbout .modal-content{
+  background-image: url("../images/aboutMe.png");
+  box-shadow: 10px 10px 5px black;
+  font-size: 15px;
+  border-radius: 25px;
+  height: 520px;
+  padding:20px;
+  padding-top: 10px;
+
+}
+
+#modalAbout .modal-header{
+  border-bottom: 2px solid black !important;
+}
+
+
+/* Animaciones de los modals */
+.animacion1{
+  opacity: 1;
+  transform: scale(1);
+}

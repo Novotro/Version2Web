@@ -1,0 +1,258 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta charset="UTF-8">
+
+<meta name="description" content="Web curr&iacute;culum de Rub&eacute;n Diaz Ramos, Desarrollador web y multiplataforma." />
+<meta name="keywords" content="Ruben,Diaz,Ramos,developer,dev,desarrollador,multiplataforma,web,espa&ntilde;a,spain,catalunya,catal&ntilde;a,catalonia,HTML,CSS,XML,JavaScript">
+<meta name="author" content="Rub&eacute;n Diaz Ramos">
+<!-- jquery -->
+<script src="./scripts/jquery-3.3.1.min.js"></script>
+<!-- Scripts -->
+<script src="./scripts/phaser.js"></script>
+<script src="./scripts/scripts.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<!-- Estilos -->
+<link rel="stylesheet" href="./styles/styles.css">
+<!-- Favicon -->
+<link rel="icon" type="image"  href="../images/favicon.ico">
+<!-- Titulo de la web -->
+<title>Web de Rub&eacute;n D&iacute;az Ramos</title>
+</head>
+<body>
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Botones del menu -->
+      <ul class="navbar-nav mr-auto BotonesNavegacion">
+
+        <li class="nav-item active">
+          <a class="nav-link" id="botonAbout" href="#">Sobre mi</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link animacion1" id="botonCono" href="#">Conocimientos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" id="botonContact" href="#">Contacto</a>
+        </li>
+      </ul>
+      <div id="music">
+        <img id="musicON" src="./images/musicon.png" alt="M&uacute;sica"> </img>
+      </div>
+      <!-- fin botones del menu -->
+    </div>
+  </nav>
+
+<!-- Contenedor -->
+<div id="container">
+
+
+      <!-- Modal home -->
+      <!-- <div class="modal fade" tabindex="-1" id="modalHome" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Bienvenido/a a mi web!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="textModalHome">
+                <p>Hola soy Rub&eacute;n! </p>
+                <p>Para ver las Instrucciones del juego, haz click en el icono de interrogaci&oacute;n que est&aacute; situado en la parte superior derecha.</p>
+                  <p>Esta web esta en una fase muy temprana de su desarrollo por lo que esta sometida a continuos cambios.<br/>Se esta desarrollando una version para tel&eacute;fono m&oacute;vil y tablet, por lo tanto se recomienda visualizar esta web desde un ordenador.</p>
+                  <p>Espero que te guste.</p>
+                  <p>Saludos,<br/> Rub&eacute;n</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- Final Modal home -->
+        <!-- <prueba -->
+        <!-- About -->
+        <div class="modal fade" tabindex="-1" id="modalAbout" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Sobre Mi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div id="textModalAbout">
+                  <p>Hola! Bienvenido/a a m&iacute; web!</p>
+                  <p>Mi nombre es Rub&eacute;n D&iacute;az Ramos y soy un joven desarrollador de aplicaciones con muchas ganas de trabajar y aprender a utilizar nuevas tecnolog&iacute;as.</p>
+                  <p>Me encanta aprender a usar nuevos lenguajes que abran paso a mi creatividad, nuevas formas de desarrollar webs, explorar nuevas tecnologias, aprender nuevas t&eacute;cnicas...</p>
+                  <p>Esta web esta desarrollada enteramente con JavaScript, JQuery, HTML, Bootstrap y CSS. Espero que la disfrut&eacute;is!</p>
+                  <p>Para el videojuego he usado un FrameWork de HTML5 llamado Phaser.</p>
+                  <p>Saludos,<br/> Rub&eacute;n</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Final about -->
+
+        <!-- Conocimientos -->
+
+        <div class="modal fade" tabindex="-1" id="modalCono" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Conocimientos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active"><strong>Experiencia Laboral</strong></a>
+                  <ul class="list-group-item list-group-item-action">
+                    <li class="titles"><strong>Enero 2019 - Actualidad. Programador Junior.<br/>Empresa: <span class="empresas">Randstad - BBVA IT</span></strong></li>
+                    <ul>
+                      <li>Creaci&oacute;n de plantillas pdf usando Itext y Apache Velocity</li>
+                      <li>Adaptaci&oacute;n de ventanas en los distintos navegadores con Javascript/Java</li>
+                    </ul>
+                    <li class="titles"><strong>Diciembre 2017 - Mayo 2018. Pr&aacute;cticas en el departamento de programaci&oacute;n web.<br/>Empresa: <span class="empresas">Whads Media</span></strong></li>
+                    <ul>
+                      <li>Recortar y editar im&aacute;genes para su posterior publicaci&oacute;n en internet y/o en maquetas.</li>
+                      <li>Publicaci&oacute;n de noticias, art&iacute;culos y envio de newsletter.</li>
+                      <li>Maquetaci&oacute;n html y css.</li>
+                      <li>Gesti&oacute;n de contenido web mediante CMS (Gestor de contenido).</li>
+                    </ul>
+                    <li class="titles"><strong>Octubre 2012 - Mayo 2013. Pr&aacute;cticas en el departamento de programaci&oacute;n web.<br/>Empresa: <span class="empresas">Webfine S.L</span></strong></li>
+                    <ul>
+                      <li>Administraci&oacute;n Web: Control, actualizaci&oacute;n, publicaci&oacute;n de eventos en la p&aacute;gina oficial que proporcionaba la empresa as&iacute; como env&iacute;o de e-mailing semanal.</li>
+                      <li>Programaci&oacute;n Web: Atenci&oacute;n de las peticiones de los clientes y programaci&oacute;n posterior con los cambios solicitados por estos mismos sobre sus p&aacute;ginas web.</li>
+                      <li>Edici&oacute;n de v&iacute;deo/im&aacute;genes: Recortar y editar v&iacute;deos e im&aacute;genes para su posterior publicaci&oacute;n en internet.</li>
+                    </ul>
+                    <li class="titles"><strong>Diciembre 2009 - Mayo 2010. Pr&aacute;cticas en el departamento de inform&aacute;tica. <br/>Empresa: <span class="empresas"> Grupo B2B y GestionaEventos</span></strong></li>
+                    <ul>
+                      <li>Edici&oacute;n de im&aacute;genes: Recortar y editar im&aacute;genes para su posterior publicaci&oacute;n en Internet.</li>
+                      <li>Env&iacute;o semanal de e-mailing a los diferentes clientes afiliados a la empresa.</li>
+                      <li>Creaci&oacute;n de base de datos para la informaci&oacute;n interna de la empresa.</li>
+                    </ul>
+                  </ul>
+                </div>
+
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active"><strong>Estudios</strong></a>
+                  <ul class="list-group-item list-group-item-action">
+                    <li><strong>Ciclo Formativo de grado superior en Desarrollo de Aplicaciones Web (a&ntilde;o 2018).</strong><br/>I.E.S Marianao (Sant Boi de Llobregat)</li>
+                    <li><strong>Ciclo Formativo de grado superior en Desarrollo de aplicaciones Multiplataforma (a&ntilde;o 2014).</strong><br/>I.E.S Marianao (Sant Boi de Llobregat)</li>
+                    <li><strong>T&iacute;tulo de Bachillerato a efectos profesionales (a&ntilde;o 2011).</strong><br/>I.E.S Marianao (Sant Boi de Llobregat).</li>
+                    <li><strong>Ciclo Formativo Medio en explotaci&oacute;n de sistemas inform&aacute;ticos (a&ntilde;o 2010).</strong><br/>I.E.S Marianao (Sant Boi de Llobregat)</li>
+                    <li><strong>T&iacute;tulo de graduado de Educaci&oacute;n Secundaria Obligatoria (E.S.O).</strong><br/>I.E.S Marianao (Sant Boi de Llobregat)</li>
+                  </ul>
+                </div>
+
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active"><strong>Conocimientos</strong></a>
+                  <ul class="list-group-item list-group-item-action">
+                    <li>Microsoft Office a nivel avanzado.</li>
+                    <li>Manejo de programas espec&iacute;ficos como Photoshop, NetBeans y Atom.</li>
+                    <li>Manejo de Github</li>
+                    <li>Manejo de CMS como Joomla y WordPress.</li>
+                    <li>Conocimientos de lenguajes como: <strong>Java, Android, C, HTML, PHP, CSS, Javascript, Jquery, AJAX y MEAN Stack.</strong></li>
+                  </ul>
+                </div>
+
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active"><strong>Idiomas</strong></a>
+                  <ul class="list-group-item list-group-item-action">
+                    <li><strong>Espa&ntilde;ol:</strong> Lengua materna. Nivel hablado y escrito alto. </li>
+                    <li><strong>Catal&aacute;n:</strong> Lengua materna. Nivel hablado y escrito alto. </li>
+                    <li><strong>Ingl&eacute;s:</strong> Nivel Hablado y escrito medio.</li>
+                  </ul>
+                </div>
+
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active"><strong>Otro Datos de Inter&eacute;s</strong></a>
+                  <ul class="list-group-item list-group-item-action">
+                    <li>Disponibilidad para viajar. Disponibilidad inmediata a tiempo completo.</li>
+                    <li>Licencia de conducci&oacute;n de Clase B.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Final Conocimientos -->
+
+        <!-- Modal contacto -->
+        <div class="modal fade" tabindex="-1" id="modalContact" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Contacto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <p>El mail ser&aacute; respondido con la mayor brevedad posible</p>
+                <form action="mailer.php" method="post" class="form-consulta">
+                  <div class="form-group">
+                    <label for="email">Nombre y apellidos*</label>
+                    <input type="text" id="inputNombre" class="form-control"  aria-describedby="emailHelp" placeholder="Introduce tu nombre y tus apellidos" name="nombre"required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Direcci&oacute;n e-mail*</label>
+                    <input type="email" id="inputEmail" class="form-control"  aria-describedby="emailHelp" placeholder="Introduce tu e-mail" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="inputAsunto" class="form-control" placeholder="" name="asunto">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Mensaje</label>
+                    <textarea class="form-control" rows="3" name="texto"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                    <small id="emailHelp" class="form-text text-muted">(<span>*</span>) Campos Obligatorios</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+<!--prueba-->
+<div id="divGame"></div> <!-- Capa donde ira el juego -->
+
+
+<!-- Footer de la web -->
+
+    <footer class="footer">
+      <div class="divFooter col-12">
+        <div class="offset-5" id="dev">
+          <p>Desarrollado y dise&ntilde;ado por <a href="https://www.linkedin.com/in/rub%C3%A9n-diaz-ramos-27982663/" target="_blank">Rub&eacute;n D&iacute;az Ramos</a></p>
+        </div>
+        <div id="social">
+            <a href="https://www.facebook.com/rubendr91" target="_blank"><img src="./images/fb.png"/></a>
+            <a href="https://www.linkedin.com/in/rub%C3%A9n-diaz-ramos-27982663/" target="_blank"><img src="./images/linkedin.png"/></a>
+            <a href="https://github.com/Novotro" target="_blank"><img src="./images/github.png"/></a>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Final Contenedor -->
+</div>
+
+</body>
+</html>
